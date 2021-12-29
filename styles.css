@@ -104,8 +104,13 @@ p{
     
 }
 
+a{
+    color: white;
+}
+
 .icon{
-  border: 2px solid ;
+  border: 2px solid white ;
+  
   text-align: center;
   border-radius: 50px;
   display: inline-block;
@@ -121,8 +126,75 @@ p{
   .icon :hover{
       color: var(--softMagenta);
       
-  }
+  }  
 
 .footer{
     bottom: 30px;
+}
+
+@media(max-width:750px){
+   .main{
+       background-image: url('./images/bg-mobile.svg'); 
+       flex-direction: column;
+       
+       justify-content: center;
+       align-items: center;
+       padding: -10px;
+   } 
+
+   .left{
+       
+       margin: 90px;
+       top: 70px;         
+   }
+
+   .logo{
+       top: -50px;
+       left: 20px;
+   }
+
+   .logo img{
+       width: 150px;
+       height: 150px;
+   }
+
+   
+   .mockup img{
+    width: 300px;
+    height: 300px;
+       
+   }
+
+   .right{
+       margin-top: 40px;
+       justify-content: left;
+       max-width: 90%;
+   }
+
+   h1{
+      max-width: 600px;
+      padding: 0; 
+      text-align: center;
+   }
+
+   p{
+       max-width: 600px;
+       padding: 0;
+       font-size: 15px;
+       text-align: center;
+       font-weight: 500;
+   }
+
+   .social{
+       bottom: -80px;
+       text-align: center;
+       left: 20px;
+   }
+
+   .footer{
+       position: absolute;
+       bottom: -230px;
+       margin: auto;
+       left: 50px;
+   }
 }
